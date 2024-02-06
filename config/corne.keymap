@@ -70,7 +70,21 @@
    &trans  &trans       &trans       &trans       &kp C_VOL_DN       &kp C_PP        &trans &kp LA(DOWN) &kp LA(UP) &trans    &trans &kp LS(LG(LC(N4)))
                           	       &kp LGUI        &trans       &kp LC(RALT)    &kp RET  &trans   &kp RALT
                         >;
-                };      
+                };     
+                 adjust_layer {
+// -----------------------------------------------------------------------------------------
+// |  ZBRUSH |  !  |  @  |  #  |  MUTE  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | TRANS  | TRANS   | TRANS  | PREV   | VOLUP  | NEXT   |   |  TRANS  |  TRANS  |  TRANS  |  TRANS  | TRANS  |  EMOJI   |
+// | SHFT |  TRANS   |  TRANS   |  VOLDN   | TRANS    | HOME  |   |  END  |  TRANS  |  PASTEFOLDER  |  COPY  | PASTE |  SCREENCAP   |
+//                    | GUI |  TRANS | SPACE |   | ENT |  TRANS | ALT |
+                        display-name = "ADJ";
+                        bindings = <
+ &tog ZBRUSH    &kp EXCL     &kp AT       &kp HASH     &kp K_MUTE     &kp PRCNT      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4 &bt BT_CLR
+   &trans     &trans       &trans       &kp C_PREV       &kp C_VOL_UP       &kp C_NEXT         &trans   &trans   &trans    &trans    &trans &kp LG(LC(SPACE))
+   &kp LSHFT  &trans       &trans       &trans       &kp C_VOL_DN       &kp C_PP        &kp END &trans &kp LA(LG(V)) &kp LG(C)    &kp LG(V) &kp LS(LG(LC(N4)))
+                          	       &kp LGUI        &trans       &kp SPACE    &kp RET  &trans   &kp RALT
+                        >;
+                };       
                  zbrush_layer {
 // -----------------------------------------------------------------------------------------
 // |  ZBRUSH |  TRANS  |  TRANS  |  TRANS  |  TRANS  |  TRANS  |   |  SAVE  |  CLEARCAN  |  SPOTLIGHT  |  TRANS  |  TRANS  | QUICKSAVE |
