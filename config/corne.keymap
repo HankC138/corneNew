@@ -14,7 +14,7 @@
 #define RAISE 2
 #define ADJUST 3
 #define ZBRUSH 4
-#define SNDBRD 5
+#define GAMING 5
 
 / {
     conditional_layers {
@@ -101,18 +101,18 @@
                           	       &trans        &trans       &trans    &kp SPACE  &kp LC(Z)   &kp LC(LS(Z))
                         >;
                 };      
-                 soundboard_layer {
+                 gaming_layer {
 // -----------------------------------------------------------------------------------------
 // |  ZBRUSH |  TRANS  |  TRANS  |  TRANS  |  TRANS  |  TRANS  |   |  SAVE  |  CLEARCAN  |  SPOTLIGHT  |  TRANS  |  TRANS  | QUICKSAVE |
 // | TRANS  | TRANS   | TRANS   | TRANS   | TRANS   | TRANS   |   |  Q  |  W  |  E  |  R  |  0  |  SHIFT   |
 // | TRANS |  TRANS   |  TRANS   |  TRANS   | TRANS    | TRANS  |   |  B  |  X  |  LBKT  |  RBKT  | ALT |  CTRL   |
 //                    | TRANS |  TRANS | TRANS |   | SPACE |  UNDO | REDO |
-                        display-name = "SND";
+                        display-name = "gmr";
                         bindings = <
- &tog SNDBRD    &kp F1     &kp F16       &kp F17     &kp F18     &kp F19      &kp LC(F16)   &kp LC(F17)   &kp LC(F18)    &kp LC(F19)    &kp LC(F20) &kp LC(F21)
-   &trans     &kp F6       &kp F7       &kp F8       &kp F9       &kp F10         &kp KP_N1   &kp KP_N2   &kp KP_N3    &kp KP_N4    &kp KP_N5 &kp KP_N5
-   &trans  &kp F11       &kp F12       &kp F13       &kp F14      &kp F15        &kp KP_N6 &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp KP_N0    &kp KP_DOT
-                          	       &trans        &trans       &trans    &kp SPACE  &kp LC(Z)   &kp LC(LS(Z))
+  &trans     &trans       &trans       &trans       &trans       &trans     &kp LA(F1)   &kp LA(F6)   &kp LA(F7)    &kp LA(F8)    &kp LA(F9) &kp LA(F10)
+   &trans     &trans       &trans       &trans       &trans       &trans         &trans     &trans       &trans       &trans       &trans       &trans
+    &trans     &trans       &trans       &trans       &trans       &trans        &trans     &trans       &trans       &trans       &trans       &tog GAMING
+                          	       &trans        &trans       &trans    &trans        &trans       &trans 
                         >;
                 };      
         };
