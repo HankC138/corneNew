@@ -82,7 +82,7 @@
                          = "ADJ";
                         bindings = <
  &tog ZBRUSH    &kp EXCL     &kp AT       &kp HASH     &kp K_MUTE     &kp PRCNT      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4 &bt BT_CLR
-   &tog SNDBRD     &trans       &trans       &kp C_PREV       &kp C_VOL_UP       &kp C_NEXT         &trans   &trans   &trans    &trans    &trans &kp LG(LC(SPACE))
+   &tog GAMING     &trans       &trans       &kp C_PREV       &kp C_VOL_UP       &kp C_NEXT         &trans   &trans   &trans    &trans    &trans &kp LG(LC(SPACE))
    &kp LSHFT  &trans       &trans       &trans       &kp C_VOL_DN       &kp C_PP        &kp END &trans &kp LA(LG(V)) &kp LG(C)    &kp LG(V) &kp LS(LG(LC(N4)))
                           	       &kp LGUI        &trans       &kp SPACE    &kp RET  &trans   &kp RALT
                         >;
